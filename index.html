@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      display: none;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="main flex">
+    <nav id="user_nav" class="flex">
+      <div id="user" class="flex">
+        <img src="./images/image-jeremy.png" alt="">
+        <div>
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div id="navigation">
+        <ul class="flex">
+          <li class="nav_items">
+            Daily
+          </li>
+          <li class="nav_items active">
+            Weekly
+          </li>
+          <li class="nav_items">
+            Monthly
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="card_area" class="flex">
+      <section class="card_sections flex">
+        <div class="cards flex" style="--c:hsl(15,100%,70%)">
+          <div class="image flex">
+            <img src="./images/icon-work.svg" alt="">
+          </div>
+          <div class="cards_details flex">
+            <div class="card_head flex">
+              <h4>Work</h4>
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+            <div class="card_body flex">
+              <h1 class="timec"></h1>
+              <h4>
+                Last <span class="nav_select"></span> - <span class="timel"></span>hrs
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="cards flex" style="--c:hsl(195,74%,62%)">
+          <div class="image flex">
+            <img src="./images/icon-play.svg" alt="">
+          </div>
+          <div class="cards_details flex">
+            <div class="card_head flex">
+              <h4>Play</h4>
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+            <div class="card_body flex">
+              <h1 class="timec"></h1>
+              <h4>
+                Last <span class="nav_select"></span> - <span class="timel"></span>hrs
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="cards flex" style="--c:hsl(348,100%,68%)">
+          <div class="image flex">
+            <img src="./images/icon-study.svg" alt="">
+          </div>
+          <div class="cards_details flex">
+            <div class="card_head flex">
+              <h4>Study</h4>
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+            <div class="card_body flex">
+              <h1 class="timec"></h1>
+              <h4>
+                Last <span class="nav_select"></span> - <span class="timel"></span>hrs
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card_sections flex">
+        <div class="cards flex" style="--c:hsl(145,58%,55%)">
+          <div class="image flex">
+            <img src="./images/icon-exercise.svg" alt="">
+          </div>
+          <div class="cards_details flex">
+            <div class="card_head flex">
+              <h4>Exercise</h4>
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+            <div class="card_body flex">
+              <h1 class="timec"></h1>
+              <h4>
+                Last <span class="nav_select"></span> - <span class="timel">1</span>hrs
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="cards flex" style="--c:hsl(264,64%,52%)">
+          <div class="image flex">
+            <img src="./images//icon-social.svg" alt="">
+          </div>
+          <div class="cards_details flex">
+            <div class="card_head flex">
+              <h4>Social</h4>
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+            <div class="card_body flex">
+              <h1 class="timec"></h1>
+              <h4>
+                Last <span class="nav_select"></span> - <span class="timel"></span>hrs
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="cards flex" style="--c:hsl(43,84%,65%)">
+          <div class="image flex">
+            <img src="./images/icon-self-care.svg" alt="">
+          </div>
+          <div class="cards_details flex">
+            <div class="card_head flex">
+              <h4>Self Care</h4>
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+            <div class="card_body flex">
+              <h1 class="timec"></h1>
+              <h4>
+                Last <span class="nav_select"></span> - <span class="timel"></span>hrs
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="attribution d-none">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
